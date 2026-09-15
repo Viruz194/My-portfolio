@@ -67,19 +67,35 @@ const Hero: React.FC<HeroProps> = ({ lang, onOpenTerminal, onShowToast }) => {
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-[700px]">
         <div className="bg-[var(--bg-secondary)] border border-[var(--border-dim)] p-3 text-center clip-corner">
           <div className="text-2xl md:text-3xl font-black text-[var(--accent-yellow)] font-mono">10+ YRS</div>
-          <div className="text-xs text-[var(--text-muted)] font-mono uppercase">{t.metric_grit}</div>
+          <div className="text-xs text-[var(--text-muted)] font-mono uppercase">FIELD DEPLOYMENT</div>
         </div>
         <div className="bg-[var(--bg-secondary)] border border-[var(--border-dim)] p-3 text-center clip-corner">
-          <div className="text-2xl md:text-3xl font-black text-[var(--accent-cyan)] font-mono">2 YRS+</div>
-          <div className="text-xs text-[var(--text-muted)] font-mono uppercase">{t.metric_china}</div>
+          <div className="text-2xl md:text-3xl font-black text-[var(--accent-cyan)] font-mono">MES & IoT</div>
+          <div className="text-xs text-[var(--text-muted)] font-mono uppercase">PLC & BATCH TRACKING</div>
         </div>
         <div className="bg-[var(--bg-secondary)] border border-[var(--border-dim)] p-3 text-center clip-corner">
           <div className="text-2xl md:text-3xl font-black text-[var(--accent-pink)] font-mono">15+</div>
-          <div className="text-xs text-[var(--text-muted)] font-mono uppercase">{t.metric_clients}</div>
+          <div className="text-xs text-[var(--text-muted)] font-mono uppercase">GLOBAL CLIENTS</div>
         </div>
         <div className="bg-[var(--bg-secondary)] border border-[var(--border-dim)] p-3 text-center clip-corner">
-          <div className="text-2xl md:text-3xl font-black text-[var(--text-primary)] font-mono">BCA</div>
-          <div className="text-xs text-[var(--text-muted)] font-mono uppercase">{t.metric_bca}</div>
+          <div className="text-2xl md:text-3xl font-black text-[var(--text-primary)] font-mono">SQDIP</div>
+          <div className="text-xs text-[var(--text-muted)] font-mono uppercase">GEMBALIVE TELEMETRY</div>
+        </div>
+      </div>
+
+      {/* Immediate Executive Substance Highlight Box */}
+      <div className="mt-6 p-4 max-w-[700px] bg-[var(--bg-secondary)] border-l-4 border-[var(--accent-cyan)] clip-corner text-xs font-mono text-[var(--text-secondary)] space-y-2 shadow-md">
+        <div className="text-[var(--accent-yellow)] font-bold uppercase tracking-widest text-[11px] flex items-center justify-between">
+          <span className="flex items-center gap-2"><i className="fas fa-industry"></i> CORE INDUSTRIAL SUBSTANCE & EXPERTISE</span>
+          <span className="text-[10px] text-[var(--accent-cyan)] uppercase font-mono">VERIFIED 10+ YRS</span>
+        </div>
+        <div className="flex flex-wrap gap-2 pt-1">
+          <span className="bg-[var(--bg-primary)] border border-[var(--border-dim)] px-2.5 py-1 text-[var(--text-primary)] font-semibold rounded">⚙️ MES & Industrial IoT</span>
+          <span className="bg-[var(--bg-primary)] border border-[var(--border-dim)] px-2.5 py-1 text-[var(--text-primary)] font-semibold rounded">🔌 PLC & Sensor Integration</span>
+          <span className="bg-[var(--bg-primary)] border border-[var(--border-dim)] px-2.5 py-1 text-[var(--text-primary)] font-semibold rounded">📦 Batch Tracking & FIFO</span>
+          <span className="bg-[var(--bg-primary)] border border-[var(--border-dim)] px-2.5 py-1 text-[var(--text-primary)] font-semibold rounded">📊 OEE & Predictive Analytics</span>
+          <span className="bg-[var(--bg-primary)] border border-[var(--border-dim)] px-2.5 py-1 text-[var(--text-primary)] font-semibold rounded">🏭 On-Site Commissioning</span>
+          <span className="bg-[var(--bg-primary)] border border-[var(--border-dim)] px-2.5 py-1 text-[var(--text-primary)] font-semibold rounded">🤖 AI-Assisted Manufacturing</span>
         </div>
       </div>
 

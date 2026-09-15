@@ -63,39 +63,52 @@ const Hero: React.FC<HeroProps> = ({ lang, onOpenTerminal, onShowToast }) => {
         {t.hero_desc_1} <strong className="text-[var(--text-primary)] font-extrabold">{t.hero_desc_2}</strong> {t.hero_desc_3} <strong className="text-[var(--accent-yellow)]">{t.hero_desc_4}</strong> {t.hero_desc_5} <strong className="text-[var(--accent-cyan)]">{t.hero_desc_6}</strong> {t.hero_desc_7}
       </p>
 
-      {/* Metric Counters Banner */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-[700px]">
-        <div className="bg-[var(--bg-secondary)] border border-[var(--border-dim)] p-3 text-center clip-corner">
+      {/* Metric Counters Banner (Refined with Authentic LinkedIn Data) */}
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-[750px]">
+        <div className="bg-[var(--bg-secondary)] border border-[var(--border-dim)] p-3.5 text-center clip-corner hover:border-[var(--accent-yellow)] transition-all">
           <div className="text-2xl md:text-3xl font-black text-[var(--accent-yellow)] font-mono">10+ YRS</div>
-          <div className="text-xs text-[var(--text-muted)] font-mono uppercase">FIELD DEPLOYMENT</div>
+          <div className="text-[11px] text-[var(--text-muted)] font-mono uppercase font-bold tracking-wider">ACEMICROMATIC MIT</div>
+          <div className="text-[10px] text-[var(--text-secondary)] font-mono uppercase mt-0.5">SMART MANUFACTURING</div>
         </div>
-        <div className="bg-[var(--bg-secondary)] border border-[var(--border-dim)] p-3 text-center clip-corner">
-          <div className="text-2xl md:text-3xl font-black text-[var(--accent-cyan)] font-mono">MES & IoT</div>
-          <div className="text-xs text-[var(--text-muted)] font-mono uppercase">PLC & BATCH TRACKING</div>
+        <div className="bg-[var(--bg-secondary)] border border-[var(--border-dim)] p-3.5 text-center clip-corner hover:border-[var(--accent-cyan)] transition-all">
+          <div className="text-2xl md:text-3xl font-black text-[var(--accent-cyan)] font-mono">MES & IIoT</div>
+          <div className="text-[11px] text-[var(--text-muted)] font-mono uppercase font-bold tracking-wider">TRACEABILITY & OEE</div>
+          <div className="text-[10px] text-[var(--text-secondary)] font-mono uppercase mt-0.5">SPC, TPM & TOOL LIFE</div>
         </div>
-        <div className="bg-[var(--bg-secondary)] border border-[var(--border-dim)] p-3 text-center clip-corner">
-          <div className="text-2xl md:text-3xl font-black text-[var(--accent-pink)] font-mono">15+</div>
-          <div className="text-xs text-[var(--text-muted)] font-mono uppercase">GLOBAL CLIENTS</div>
+        <div className="bg-[var(--bg-secondary)] border border-[var(--border-dim)] p-3.5 text-center clip-corner hover:border-[var(--accent-pink)] transition-all">
+          <div className="text-xl md:text-2xl font-black text-[var(--accent-pink)] font-mono leading-tight">CHINA ONSITE</div>
+          <div className="text-[11px] text-[var(--text-muted)] font-mono uppercase font-bold tracking-wider">SUNDRAM FASTENERS</div>
+          <div className="text-[10px] text-[var(--text-secondary)] font-mono uppercase mt-0.5">JIAXING, ZHEJIANG (TVS)</div>
         </div>
-        <div className="bg-[var(--bg-secondary)] border border-[var(--border-dim)] p-3 text-center clip-corner">
-          <div className="text-2xl md:text-3xl font-black text-[var(--text-primary)] font-mono">SQDIP</div>
-          <div className="text-xs text-[var(--text-muted)] font-mono uppercase">GEMBALIVE TELEMETRY</div>
+        <div className="bg-[var(--bg-secondary)] border border-[var(--border-dim)] p-3.5 text-center clip-corner hover:border-[var(--accent-yellow)] transition-all">
+          <div className="text-2xl md:text-3xl font-black text-[var(--text-primary)] font-mono">SQDIP / OEE</div>
+          <div className="text-[11px] text-[var(--text-muted)] font-mono uppercase font-bold tracking-wider">GEMBALIVE TELEMETRY</div>
+          <div className="text-[10px] text-[var(--text-secondary)] font-mono uppercase mt-0.5">REAL-TIME ANALYTICS</div>
         </div>
       </div>
 
-      {/* Immediate Executive Substance Highlight Box */}
-      <div className="mt-6 p-4 max-w-[700px] bg-[var(--bg-secondary)] border-l-4 border-[var(--accent-cyan)] clip-corner text-xs font-mono text-[var(--text-secondary)] space-y-2 shadow-md">
-        <div className="text-[var(--accent-yellow)] font-bold uppercase tracking-widest text-[11px] flex items-center justify-between">
-          <span className="flex items-center gap-2"><i className="fas fa-industry"></i> CORE INDUSTRIAL SUBSTANCE & EXPERTISE</span>
-          <span className="text-[10px] text-[var(--accent-cyan)] uppercase font-mono">VERIFIED 10+ YRS</span>
+      {/* Executive Industrial Substance Box (Directly Aligned with LinkedIn) */}
+      <div className="mt-6 p-4 max-w-[750px] bg-[var(--bg-secondary)] border-l-4 border-[var(--accent-cyan)] clip-corner text-xs font-mono text-[var(--text-secondary)] space-y-2.5 shadow-lg">
+        <div className="text-[var(--accent-yellow)] font-bold uppercase tracking-widest text-[11px] flex items-center justify-between flex-wrap gap-2">
+          <span className="flex items-center gap-2">
+            <i className="fas fa-industry text-[var(--accent-cyan)]"></i> ACEMICROMATIC MIT — PRINCIPAL ENGINEER
+          </span>
+          <span className="text-[10px] bg-[var(--accent-cyan)]/20 text-[var(--accent-cyan)] border border-[var(--accent-cyan)]/40 px-2 py-0.5 font-mono uppercase rounded font-bold">
+            10 YRS 4 MOS EXPERIENCE
+          </span>
         </div>
-        <div className="flex flex-wrap gap-2 pt-1">
-          <span className="bg-[var(--bg-primary)] border border-[var(--border-dim)] px-2.5 py-1 text-[var(--text-primary)] font-semibold rounded">⚙️ MES & Industrial IoT</span>
-          <span className="bg-[var(--bg-primary)] border border-[var(--border-dim)] px-2.5 py-1 text-[var(--text-primary)] font-semibold rounded">🔌 PLC & Sensor Integration</span>
-          <span className="bg-[var(--bg-primary)] border border-[var(--border-dim)] px-2.5 py-1 text-[var(--text-primary)] font-semibold rounded">📦 Batch Tracking & FIFO</span>
-          <span className="bg-[var(--bg-primary)] border border-[var(--border-dim)] px-2.5 py-1 text-[var(--text-primary)] font-semibold rounded">📊 OEE & Predictive Analytics</span>
-          <span className="bg-[var(--bg-primary)] border border-[var(--border-dim)] px-2.5 py-1 text-[var(--text-primary)] font-semibold rounded">🏭 On-Site Commissioning</span>
-          <span className="bg-[var(--bg-primary)] border border-[var(--border-dim)] px-2.5 py-1 text-[var(--text-primary)] font-semibold rounded">🤖 AI-Assisted Manufacturing</span>
+
+        <p className="text-[13px] text-[var(--text-primary)] leading-relaxed font-sans normal-case">
+          Leading end-to-end execution of <strong>Industrial Digital Transformation</strong> across MES, Traceability, OEE, SPC, TPM, Tool Life Monitoring, and IIoT solutions. Experienced in international on-site project management (China — Sundram Fasteners Zhejiang / TVS) from raw material to packing.
+        </p>
+
+        <div className="flex flex-wrap gap-1.5 pt-1">
+          <span className="bg-[var(--bg-primary)] border border-[var(--border-dim)] px-2.5 py-1 text-[var(--accent-cyan)] font-semibold rounded text-[11px]">⚙️ MES & Traceability</span>
+          <span className="bg-[var(--bg-primary)] border border-[var(--border-dim)] px-2.5 py-1 text-[var(--accent-yellow)] font-semibold rounded text-[11px]">📊 OEE, SPC & TPM</span>
+          <span className="bg-[var(--bg-primary)] border border-[var(--border-dim)] px-2.5 py-1 text-[var(--accent-pink)] font-semibold rounded text-[11px]">🏭 China On-Site Execution (TVS)</span>
+          <span className="bg-[var(--bg-primary)] border border-[var(--border-dim)] px-2.5 py-1 text-[var(--text-primary)] font-semibold rounded text-[11px]">🔌 IIoT & Tool Life Monitoring</span>
+          <span className="bg-[var(--bg-primary)] border border-[var(--border-dim)] px-2.5 py-1 text-[var(--accent-cyan)] font-semibold rounded text-[11px]">📈 SQL Server & Power BI Analytics</span>
+          <span className="bg-[var(--bg-primary)] border border-[var(--border-dim)] px-2.5 py-1 text-[var(--accent-yellow)] font-semibold rounded text-[11px]">🤝 Technical Project Leadership</span>
         </div>
       </div>
 

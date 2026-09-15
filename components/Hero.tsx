@@ -166,16 +166,16 @@ const Hero: React.FC<HeroProps> = ({ lang, onOpenTerminal, onOpenResume, onShowT
         </button>
       </div>
 
-      {/* Floating Bottom Scroll Down Indicator (Always Visible at Screen Bottom) */}
+      {/* Floating Bottom-Right Scroll Down Indicator (Non-Blocking) */}
       <a
         href="#about"
         onClick={(e) => handleNavClick(e, 'about', () => {})}
         onMouseEnter={playHover}
-        className="fixed bottom-5 left-1/2 -translate-x-1/2 z-40 bg-[var(--bg-secondary)]/90 border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] px-4 py-2 clip-corner hover:bg-[var(--accent-cyan)] hover:text-black transition-all shadow-[0_0_20px_rgba(0,243,255,0.4)] flex items-center gap-2 text-xs font-mono font-bold tracking-wider animate-bounce backdrop-blur-md"
+        className="fixed bottom-6 right-6 z-40 bg-[var(--bg-secondary)]/95 border-2 border-[var(--accent-cyan)] text-[var(--accent-cyan)] px-3.5 py-2 clip-corner hover:bg-[var(--accent-cyan)] hover:text-black transition-all shadow-[0_0_20px_rgba(0,243,255,0.5)] flex items-center gap-2 text-xs font-mono font-bold tracking-wider animate-bounce backdrop-blur-md hidden sm:flex"
         title="Click or Scroll Down to explore all sections"
       >
-        <span>SCROLL TO EXPLORE SECTIONS</span>
-        <i className="fas fa-chevron-down text-sm"></i>
+        <span>SCROLL TO EXPLORE</span>
+        <i className="fas fa-chevron-down text-xs"></i>
       </a>
     </section>
   );

@@ -165,6 +165,52 @@ const Hero: React.FC<HeroProps> = ({ lang, onOpenTerminal, onOpenResume, onShowT
           <i className="fas fa-file-pdf"></i> VIEW & DOWNLOAD RESUME
         </button>
       </div>
+
+      {/* Quick Section Jump Bar */}
+      <div className="mt-8 pt-6 border-t border-[var(--border-dim)]/60 w-full max-w-5xl flex items-center justify-between flex-wrap gap-3">
+        <div className="text-[11px] font-mono text-[var(--accent-yellow)] font-bold uppercase tracking-wider flex items-center gap-2">
+          <i className="fas fa-compass text-[var(--accent-cyan)] animate-spin" style={{ animationDuration: '6s' }}></i> JUMP TO SECTION:
+        </div>
+
+        <div className="flex flex-wrap gap-2 text-xs font-mono">
+          {[
+            { label: '02_ABOUT', id: 'about', icon: 'fa-user' },
+            { label: '03_SKILLS', id: 'skills', icon: 'fa-cogs' },
+            { label: '04_MILESTONES', id: 'timeline', icon: 'fa-flag' },
+            { label: '05_CERTS', id: 'certifications', icon: 'fa-certificate' },
+            { label: '07_PROJECTS', id: 'projects', icon: 'fa-diagram-project' },
+            { label: '09_CONTACT', id: 'contact', icon: 'fa-envelope' },
+          ].map((nav, idx) => (
+            <a
+              key={idx}
+              href={`#${nav.id}`}
+              onClick={(e) => handleNavClick(e, nav.id, () => {})}
+              onMouseEnter={playHover}
+              className="bg-[var(--bg-secondary)] border border-[var(--border-dim)] text-[var(--text-secondary)] px-3 py-1.5 rounded clip-corner hover:border-[var(--accent-cyan)] hover:text-[var(--accent-cyan)] transition-all flex items-center gap-1.5"
+            >
+              <i className={`fas ${nav.icon} text-[10px]`}></i>
+              <span>{nav.label}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {/* Bouncing Scroll Down Prompt */}
+      <div className="mt-10 flex flex-col items-center justify-center w-full max-w-5xl text-center">
+        <a
+          href="#about"
+          onClick={(e) => handleNavClick(e, 'about', () => {})}
+          onMouseEnter={playHover}
+          className="group flex flex-col items-center gap-2 text-xs font-mono text-[var(--accent-cyan)] hover:text-[var(--accent-yellow)] transition-colors cursor-pointer"
+        >
+          <span className="tracking-widest font-bold uppercase bg-[var(--bg-secondary)] border border-[var(--accent-cyan)]/40 px-4 py-1.5 rounded clip-corner shadow-[0_0_15px_rgba(0,243,255,0.2)] group-hover:border-[var(--accent-yellow)] group-hover:shadow-[0_0_15px_rgba(252,238,10,0.3)]">
+            👇 SCROLL DOWN TO EXPLORE ALL SECTIONS 👇
+          </span>
+          <div className="w-8 h-8 rounded-full border border-[var(--accent-cyan)] flex items-center justify-center animate-bounce group-hover:border-[var(--accent-yellow)] shadow-[0_0_10px_rgba(0,243,255,0.4)]">
+            <i className="fas fa-chevron-down text-sm"></i>
+          </div>
+        </a>
+      </div>
     </section>
   );
 };

@@ -59,36 +59,16 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose, onShowToast 
             </div>
           </div>
 
-          <div className="flex items-center gap-2">
-            <button
-              onClick={handleViewPdf}
-              className="bg-[var(--accent-cyan)] text-black px-3 py-1.5 text-xs font-mono font-bold uppercase clip-corner hover:brightness-110 transition-all flex items-center gap-1.5 shadow-[0_0_10px_rgba(0,243,255,0.4)]"
-              title="Open PDF in new browser tab"
-            >
-              <i className="fas fa-external-link-alt"></i>
-              <span className="hidden sm:inline">VIEW PDF</span>
-            </button>
-
-            <button
-              onClick={handleDownloadPdf}
-              className="bg-[var(--accent-yellow)] text-black px-3 py-1.5 text-xs font-mono font-bold uppercase clip-corner hover:brightness-110 transition-all flex items-center gap-1.5 shadow-[0_0_10px_rgba(252,238,10,0.4)]"
-              title="Download PDF File"
-            >
-              <i className="fas fa-download"></i>
-              <span className="hidden sm:inline">DOWNLOAD PDF</span>
-            </button>
-
-            <button
-              onClick={() => {
-                playClick();
-                onClose();
-              }}
-              className="text-[var(--text-muted)] hover:text-[var(--accent-pink)] text-2xl transition-colors px-2 ml-1"
-              aria-label="Close modal"
-            >
-              <i className="fas fa-times"></i>
-            </button>
-          </div>
+          <button
+            onClick={() => {
+              playClick();
+              onClose();
+            }}
+            className="text-[var(--text-muted)] hover:text-[var(--accent-pink)] text-2xl transition-colors px-2"
+            aria-label="Close modal"
+          >
+            <i className="fas fa-times"></i>
+          </button>
         </div>
 
         {/* Tab Toggle Bar */}

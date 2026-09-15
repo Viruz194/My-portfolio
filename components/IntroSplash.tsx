@@ -159,9 +159,20 @@ const IntroSplash: React.FC<IntroSplashProps> = ({ currentLang, onSelectLang, on
         <div className="h-[2px] w-32 bg-[var(--accent-pink)] mx-auto my-2 shadow-[0_0_10px_var(--accent-pink)]"></div>
 
         {/* Subtitle / Operator Name */}
-        <div className="min-h-[32px] flex items-center justify-center mb-4">
+        <div className="min-h-[32px] flex items-center justify-center mb-2">
           <p className="text-base sm:text-xl font-mono text-[var(--accent-cyan)] uppercase font-bold tracking-widest drop-shadow-[0_0_8px_rgba(0,243,255,0.4)]">
             {t.splash_operator}
+          </p>
+        </div>
+
+        {/* First Loading Screen Industrial Substance Preview */}
+        <div className="mb-4 p-3 bg-[#03111a]/90 border border-[var(--accent-cyan)]/60 clip-corner text-left font-mono text-xs shadow-[0_0_15px_rgba(0,243,255,0.2)]">
+          <div className="text-[var(--accent-yellow)] font-bold uppercase tracking-wider text-[11px] mb-1 flex items-center justify-between">
+            <span className="flex items-center gap-1.5"><i className="fas fa-industry text-[var(--accent-cyan)]"></i> ACEMICROMATIC MIT — 10+ YRS EXPERTISE</span>
+            <span className="text-[10px] text-[var(--accent-cyan)]">VERIFIED</span>
+          </div>
+          <p className="text-gray-200 text-[11px] leading-snug font-sans normal-case">
+            Industrial Digital Transformation • MES • Traceability • OEE • SPC • IIoT • China On-Site Deployment (Sundram Fasteners / TVS)
           </p>
         </div>
 

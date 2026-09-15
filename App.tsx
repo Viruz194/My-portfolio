@@ -14,6 +14,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import TerminalModal from './components/TerminalModal';
 import ProjectModal, { ProjectData } from './components/ProjectModal';
+import ResumeModal from './components/ResumeModal';
 import Toast, { ToastMessage } from './components/Toast';
 import IntroSplash from './components/IntroSplash';
 import LanguageSelector from './components/LanguageSelector';
@@ -26,6 +27,7 @@ const App: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [theme, setTheme] = useState<'cyberpunk' | 'minimal'>('cyberpunk');
   const [isTerminalOpen, setIsTerminalOpen] = useState(false);
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
   const [soundActive, setSoundActive] = useState(true);
   const [toasts, setToasts] = useState<ToastMessage[]>([]);
@@ -176,7 +178,8 @@ const App: React.FC = () => {
       <main className="relative z-10">
         <Hero 
           lang={currentLang}
-          onOpenTerminal={() => setIsTerminalOpen(true)} 
+          onOpenTerminal={() => setIsTerminalOpen(true)}
+          onOpenResume={() => setIsResumeOpen(true)}
           onShowToast={showToast}
         />
         <About lang={currentLang} />
@@ -195,6 +198,12 @@ const App: React.FC = () => {
       <TerminalModal 
         isOpen={isTerminalOpen}
         onClose={() => setIsTerminalOpen(false)}
+        onShowToast={showToast}
+      />
+
+      <ResumeModal
+        isOpen={isResumeOpen}
+        onClose={() => setIsResumeOpen(false)}
         onShowToast={showToast}
       />
 
